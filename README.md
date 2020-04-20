@@ -56,25 +56,26 @@ Container Github: [https://github.com/linuxserver/docker-rutorrent](https://gith
 [![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Pipeline-Builders/docker-rutorrent/master)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-rutorrent/job/master/)
 [![](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/rutorrent/latest/badge.svg)](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/rutorrent/latest/index.html)
 
+## Jellyfin
 
-## Plex
-Plex media server allows you to aggregate all your personal media and access it anywhere you go. Enjoy your own content on all your devices with Plex.
+Website: []()  
+Github: []()  
+Container: []()  
+Container Github: []()
 
-Website: [https://www.plex.tv/](https://www.plex.tv/)  
-Container: [plexinc/pms-docker](https://hub.docker.com/r/plexinc/pms-docker/)  
-Container Github: [https://github.com/plexinc/pms-docker](https://github.com/plexinc/pms-docker)
+## Watchtower
 
-## Tautulli
-A Python based monitoring and tracking tool for Plex Media Server. Formerly known as PlexPy.
+Website: []()  
+Github: []()  
+Container: []()  
+Container Github: []()
 
-Website: [https://tautulli.com/](https://tautulli.com/)  
-Github: [https://github.com/Tautulli/Tautulli](https://github.com/Tautulli/Tautulli)  
-Container: [tautulli/tautulli](https://hub.docker.com/r/tautulli/tautulli/)  
-Container Github: [https://github.com/Tautulli/Tautulli-Docker](https://github.com/Tautulli/Tautulli-Docker)
+## Portainer
 
-![dockerhubpulls](https://img.shields.io/docker/pulls/tautulli/tautulli.svg)
-![dockerhubpulls](https://img.shields.io/docker/stars/tautulli/tautulli.svg)
-![dockerhubpulls](https://img.shields.io/docker/build/tautulli/tautulli.svg)
+Website: []()  
+Github: []()  
+Container: []()  
+Container Github: []()
 
 ## Traefik
 Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy. 
@@ -94,13 +95,13 @@ Container: [traefik](https://hub.docker.com/_/traefik)
 # Setup your Pirate Cove.
 
 First a few rerequisites.
-  - A public domain name. Buy one at [https://www.namecheap.com/](https://www.namecheap.com/)
+  - A public domain name.
   - Docker :: [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
   - Docker Compose :: [https://github.com/docker/compose/releases](https://github.com/docker/compose/releases)
   - Ports 80/tcp and 443/tcp open for web access and Traefik to get certificates.
   - Ports 51413/tcp and 6881/udp open for Rtorrent.
 
-Second, because all the services are setup with `docker-compose` they can all reach each other by their Docker Compose service name. So fx. when connecting Sonarr with Jacket, then Jackett would be available on `http://jackett/api....`, which makes everything a lot easier.
+Second, because all the services are setup with `docker-compose` they can all reach each other by their Docker Compose service name. So e.g. when connecting Sonarr with Jacket, then Jackett would be available on `http://jackett/api....`, which makes everything a lot easier.
 
 ### tl;dr
   - Edit the `.env` file
@@ -128,8 +129,8 @@ If you haven't figured it out yet, this setup comes with a reverse proxy, Traefi
  - radarr.example.org
  - jackett.example.org
  - rtorrent.example.org
- - plex.example.org
- - plexmon.example.org
+ - jellyfin.example.org
+ - portainer.example.org
  - traefik.example.org
 
 Traefik will get certificates for the provided domain names.  
